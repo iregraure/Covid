@@ -1,0 +1,8 @@
+<div *ngFor="let country of countries">
+    <div class="pais">
+        <h2>{{country.Country}}</h2>
+        <div>Confirmados: {{country.NewConfirmed}} / {{country.TotalConfirmed}}</div>
+        <div>Muertos: {{country.NewDeaths}} / {{country.TotalDeaths}}</div>
+        <div>Rcuperados: {{country.NewRecovered}} / {{country.TotalRecovered}}</div>
+    </div>
+</div>

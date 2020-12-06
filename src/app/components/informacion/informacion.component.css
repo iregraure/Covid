@@ -1,0 +1,11 @@
+.pais
+{
+    border: solid 2px grey;
+    border-radius: 15px;
+    width: 20%;
+    padding: 0 1.5vw;
+    padding-bottom: 1.5vw;
+    background-color: azure;
+    margin: 1vw;
+    font-size: 15px;
+}
