@@ -1,8 +1,17 @@
-<div *ngFor="let country of countries">
-    <div class="pais">
-        <h2>{{country.Country}}</h2>
-        <div>Confirmados: {{country.NewConfirmed}} / {{country.TotalConfirmed}}</div>
-        <div>Muertos: {{country.NewDeaths}} / {{country.TotalDeaths}}</div>
-        <div>Rcuperados: {{country.NewRecovered}} / {{country.TotalRecovered}}</div>
+<div class="grid">
+    <!-- Utilizamos la directiva *ngFor para recorrer todos los países -->
+    <div *ngFor="let country of countries">
+        <!-- Para cada país vamos a crear un div con la clase pais -->
+        <div class="pais">
+            <!-- Un div para el título y otro para los datos -->
+            <div class="titulo">
+                <h2>{{country.Country}}</h2>
+            </div>
+            <div class="datos">
+                <div>Confirmados: {{country.NewConfirmed}} / {{country.TotalConfirmed}}</div>
+                <div>Muertos: {{country.NewDeaths}} / {{country.TotalDeaths}}</div>
+                <div>Rcuperados: {{country.NewRecovered}} / {{country.TotalRecovered}}</div>
+            </div>
+        </div>
     </div>
 </div>

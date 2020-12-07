@@ -1,11 +1,33 @@
+/* Utilizamos grid para mostrar las tarjetas en 3 columnas */
+.grid
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2vw;
+    margin: 2vw;
+}
+
+/* Estilos para las tarjetas */
 .pais
 {
+    width: 90%;
+}
+
+.titulo
+{
+    font-size: 1.4vw;
     border: solid 2px grey;
-    border-radius: 15px;
-    width: 20%;
-    padding: 0 1.5vw;
-    padding-bottom: 1.5vw;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    background-color: #009999;
+}
+
+.datos
+{
+    font-size: 1.4vw;
     background-color: azure;
-    margin: 1vw;
-    font-size: 15px;
+    border: solid 2px grey;
+    border-radius: 0 0 15px 15px;
+    padding: 1.6vw;
 }

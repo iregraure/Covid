@@ -1,11 +1,44 @@
+/* Estilos para los títulos */
+h3
+{
+    font-size: 3vw;
+    margin: 1vw;
+}
+
+/* Utilizamos flex para mostrar las tarjetas una al lado de la otra */
+.flex
+{
+    display: flex;
+}
+
+.global,
+.spain
+{
+    width: 50%;
+}
+
+/* Estilos para las tarjetas */
 .pais
 {
-    border: solid 2px grey;
-    border-radius: 15px;
-    width: 20%;
-    padding: 0 1.5vw;
-    padding-bottom: 1.5vw;
-    background-color: azure;
+    width: 60%;
     margin: 1vw;
-    font-size: 15px;
+    margin-bottom: 4vw;
+}
+
+.titulo
+{
+    font-size: 1.4vw;
+    border: solid 2px grey;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    background-color: #009999;
+}
+
+.datos
+{
+    font-size: 1.4vw;
+    background-color: azure;
+    border: solid 2px grey;
+    border-radius: 0 0 15px 15px;
+    padding: 1.6vw;
 }

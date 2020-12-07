@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Country } from 'src/app/country';
 import { CovidService } from 'src/app/services/covid.service';
-import { COUNTRIES } from '../../mock-countries';
 
 @Component({
   selector: 'app-informacion',
@@ -10,11 +8,14 @@ import { COUNTRIES } from '../../mock-countries';
 })
 export class InformacionComponent implements OnInit {
 
+  // Una variable para guardar el array de países
   countries: any[] = [];
 
+  // Al constructor le pasamos el servicio para poder utilizar sus métodos
   constructor(private covidService: CovidService) { }
 
   ngOnInit(): void {
+    // Al cargar el componente utilizamos el servicio para guardar los datos de todos los países en una variable
     this.covidService.countriesData().subscribe( res => 
       {
         this.countries = res;
